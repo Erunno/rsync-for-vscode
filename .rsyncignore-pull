@@ -1,0 +1,10 @@
+# Ignore large data files on the server
+*.csv
+big_dataset/
+
+# Ignore server-side log directories
+server_logs/
+
+# Ignore compiled output files
+*.out
+build/

@@ -1,0 +1,11 @@
+# Don't upload VS Code workspace settings
+.vscode/
+
+# Ignore local log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# A specific local-only file
+my_local_notes.md

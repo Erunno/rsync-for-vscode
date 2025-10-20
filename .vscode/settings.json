@@ -1,0 +1,10 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*",
+                "cmd": "rsync -avz --exclude-from='.rsyncignore-push' /mnt/c/Users/matya/source/repos/folder-sync/ gpulab:/home/brabecm4/phd/folder-sync/"
+            }
+        ]
+    }
+}
