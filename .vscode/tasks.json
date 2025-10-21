@@ -4,14 +4,16 @@
         {
             "label": "Pull from Server",
             "type": "shell",
-            "command": "rsync -avz gpulab:/home/brabecm4/phd/folder-sync/ /mnt/c/Users/matya/source/repos/folder-sync/",
+            "command": "rsync -avz --exclude-from='.rsyncignore-pull' gpulab:/home/brabecm4/phd/folder-sync/ /mnt/c/Users/matya/source/repos/folder-sync/",
             "problemMatcher": [],
             "presentation": {
-                "reveal": "silent",
-                "focus": false,
-                "panel": "shared",
-                "showReuseMessage": false,
-                "clear": false
+                "reveal": "silent"
+            },
+            "options": {
+                "shell": {
+                    "executable": "/bin/bash",
+                    "args": ["-c"]
+                }
             }
         }
     ]

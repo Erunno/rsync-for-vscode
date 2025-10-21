@@ -6,5 +6,16 @@
                 "cmd": "rsync -avz --exclude-from='.rsyncignore-push' /mnt/c/Users/matya/source/repos/folder-sync/ gpulab:/home/brabecm4/phd/folder-sync/"
             }
         ]
-    }
+    },
+    "terminal.integrated.profiles.linux": {
+        "Remote SSH (gpulab)": {
+            "path": "ssh",
+            "args": [
+                "gpulab",
+                "-t",
+                "cd /home/brabecm4/phd/folder-sync && bash"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "Remote SSH (gpulab)"
 }
